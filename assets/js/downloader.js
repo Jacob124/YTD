@@ -1,4 +1,4 @@
-var YoutubeMp3Downloader = require("youtube-mp3-downloader");
+var YoutubeMp3Downloader = require("./YoutubeMp3Downloader");
  
 var Downloader = function() {
  
