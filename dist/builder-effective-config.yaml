@@ -1,0 +1,7 @@
+directories:
+  output: dist
+  buildResources: build
+appId: youtube.to.mp3.downloader
+productName: Youtube To MP3 Downloader
+asar: false
+electronVersion: 3.0.5

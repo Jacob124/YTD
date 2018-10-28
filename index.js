@@ -1,9 +1,6 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 
-// Auto updater
-require('update-electron-app')()
-
 function createWindow () {
     win = new BrowserWindow({
         width: 600, 
@@ -17,10 +14,14 @@ function createWindow () {
 
     win.webContents.on('did-finish-load', () => {
         win.show()
+        win.webContents.openDevTools();
     })
     win.on('closed', () => {
         win = null
     })
 }
+
 global.defaultMusicPath = app.getPath('music')
+global.ffmpeg = path.resolve(__dirname, "./bin/ffmpeg.exe")
+global.downloads = path.resolve(__dirname, "./downloads")
 app.on('ready', createWindow)

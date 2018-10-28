@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <title>YouTube to MP3 Downloader</title>
+</head>
+<body>
+    <div class="app__bar">
+        <div class="app__bar__title">YouTube to MP3 Downloader</div>
+        <div class="app__bar__controls">
+            <div class="app__bar__min" id="min"></div>
+            <div class="app__bar__close" id="close"></div>
+        </div>
+    </div>
+    <div class="app">
+        <div class="slide__container">
+            <div class="slide">
+                <div class="title">
+                    <h1>YouTube Music Downloader</h1>
+                </div>
+                <form action="" id="url__form" class="url__container">
+                    <input type="text" class="url" id="url" placeholder="Video URL" value="https://youtu.be/frFdisA68Lo">
+                    <input type="submit" class="url__submit" id="url__submit" value="Download MP3">
+                </form>
+                <a class="path" id="dl-location">C:\users\username\music\</a>
+                <!-- <div class="downloading">
+                    <div class="downloading__section">
+                        <img src="assets/img/yt.svg" alt="">
+                
+                        <span class="downloading__title">Downloading From Title and more haah</span>
+                    </div>
+                    <div class="downloading__progress downloading__section">
+                        <h1 class="downloading__progress__progress">0%</h1>
+                        <span>Downloading...</span>
+                        <div class="downloading__progress__bar">
+                            <div class="downloading__progress__bar__fill"></div>
+                        </div>
+                    </div>
+                    <div class="downloading__section">
+                        <img src="assets/img/mp3.svg" alt="">
+                        <span class="downloading__title">
+                            Downloading to title
+                        </span>
+                    </div>
+                </div> -->
+                <div class="songs">
+                    <div class="songs__header">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Artist</th>
+                                    <th>Duration</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="songs__table">
+                        <table id="song-table">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Your Song is Downloading...</h1>
+                <h2>Set the song's metadata</h2>
+                <form action="" id="meta">
+                    <input type="hidden" name="id">
+                    <div class="field-input">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+                    <div class="field-input">
+                        <label for="artist">Artist</label>
+                        <input type="text" id="artist" name="artist">
+                    </div>
+                    <div class="divide-in-three">
+                        <div class="field-input">
+                            <label for="album">Album</label>
+                            <input type="text" id="album" name="album">
+                        </div>
+                        <div class="field-input">
+                            <label for="track">Track #</label>
+                            <input type="number" id="track" name="track">
+                        </div>
+                        <div class="field-input">
+                            <label for="year">Year</label>
+                            <input type="number" id="year" name="year">
+                        </div>
+                    </div>
+                    <input type="submit" value="continue">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
