@@ -1,5 +1,8 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
+const { autoUpdater } = require("electron-updater")
+
+autoUpdater.checkForUpdatesAndNotify()
 
 function createWindow () {
     win = new BrowserWindow({

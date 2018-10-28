@@ -3,33 +3,40 @@
   "version": "1.0.0",
   "description": "Youtube to MP3 Downloader",
   "main": "index.js",
-  "repository": "https://github.com/Jacob124/YouTube-to-MP3.git",
+  "repository": "https://github.com/Jacob124/YTD.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "pack": "build --dir",
-    "build": "build -w"
+    "publish": "build -p always"
   },
   "build": {
     "appId": "youtube.to.mp3.downloader",
     "productName": "Youtube To MP3 Downloader",
     "asar": false
   },
+  "publish": [
+    {
+      "provider": "github",
+      "owner": "Jacob124",
+      "repo": "YTD"
+    }
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^3.0.5",
-    "build": "build -w"
+    "electron": "^3.0.5"
   },
   "dependencies": {
     "async": "^2.6.0",
+    "concat-stream": "~1.0.0",
+    "electron-updater": "^3.1.5",
     "fluent-ffmpeg": "2.1.2",
     "progress-stream": "^2.0.0",
-    "ytdl-core": "^0.20.1",
-    "concat-stream": "~1.0.0",
     "split": "~0.2.6",
     "stream-combiner": "0.0.2",
     "stream-filter": "1",
-    "through": "~2.3.4"
+    "through": "~2.3.4",
+    "ytdl-core": "^0.20.1"
   }
 }
