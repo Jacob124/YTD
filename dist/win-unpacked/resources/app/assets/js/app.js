@@ -5,8 +5,6 @@ const {remote} = require('electron')
 const { Menu, MenuItem } = remote
 const fs = require('fs')
 
-console.log("running")
-
 //************************************************************** */
 // Require Custom Modules
 //************************************************************** */
@@ -108,7 +106,7 @@ function prepareForm(info) {
     metaForm.querySelector('input[name="artist"]').value = info.author
 
     const textInputs = metaForm.querySelectorAll('input[type="text"]')
-    autocomplete(textInputs, info.keywords)
+    autocomplete(textInputs, (info.keywords || []))
 
 }
 
