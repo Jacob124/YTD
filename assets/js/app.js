@@ -5,7 +5,7 @@ const {remote} = require('electron')
 const { Menu, MenuItem } = remote
 const fs = require('fs')
 
-console.log("Version 3")
+console.log("Version 7")
 //************************************************************** */
 // Require Custom Modules
 //************************************************************** */

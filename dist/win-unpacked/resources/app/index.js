@@ -2,8 +2,6 @@ const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const { autoUpdater } = require("electron-updater")
 
-autoUpdater.checkForUpdatesAndNotify()
-
 
 function createWindow () {
     win = new BrowserWindow({
@@ -28,4 +26,14 @@ function createWindow () {
 global.defaultMusicPath = app.getPath('music')
 global.ffmpeg = path.resolve(__dirname, "./bin/ffmpeg.exe")
 global.downloads = path.resolve(__dirname, "./downloads")
+
+
 app.on('ready', createWindow)
+
+app.on('ready', () => {
+    autoUpdater.checkForUpdatesAndNotify()
+})
+
+app.on('window-all-closed', () => {
+    app.quit();
+});
