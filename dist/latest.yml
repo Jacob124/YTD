@@ -1,8 +1,8 @@
-version: 1.0.0
+version: 1.0.2
 files:
-  - url: ytd-setup-1.0.0.exe
-    sha512: SdOvGY21gk/zVybiWJYRXyX5kX7t1i/nN775ZkjsQSTwaIXwGQp9lHbOVkTvg99ckypR3QuC7UO0lHmhyI806Q==
-    size: 55369205
-path: ytd-setup-1.0.0.exe
-sha512: SdOvGY21gk/zVybiWJYRXyX5kX7t1i/nN775ZkjsQSTwaIXwGQp9lHbOVkTvg99ckypR3QuC7UO0lHmhyI806Q==
-releaseDate: '2018-12-09T15:29:30.037Z'
+  - url: ytd-setup-1.0.2.exe
+    sha512: 0PDHle3+Vm15mMT/Zjw9hD+/WloMq1d1sQkw4mRLvZ14fsRdjsrn4wxGUp8dG4PMzvzRlguiEIDJs5yimOEu5g==
+    size: 55369227
+path: ytd-setup-1.0.2.exe
+sha512: 0PDHle3+Vm15mMT/Zjw9hD+/WloMq1d1sQkw4mRLvZ14fsRdjsrn4wxGUp8dG4PMzvzRlguiEIDJs5yimOEu5g==
+releaseDate: '2018-12-09T16:39:32.354Z'

@@ -1,6 +1,6 @@
 {
   "name": "ytd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Youtube to MP3 Downloader",
   "main": "index.js",
   "repository": "https://github.com/Jacob124/YTD.git",
